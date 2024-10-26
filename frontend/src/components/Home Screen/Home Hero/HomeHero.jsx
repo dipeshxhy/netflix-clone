@@ -9,7 +9,6 @@ const HomeHero = () => {
   const { trendingContent } = useGetTrendingContent();
    const[imgLoading,setImgLoading]= useState(true)
  const {contentType}= useContentStore()
-  console.log(trendingContent);
   if (!trendingContent )
     return (
       <div className="relative h-screen w-full text-white ">
